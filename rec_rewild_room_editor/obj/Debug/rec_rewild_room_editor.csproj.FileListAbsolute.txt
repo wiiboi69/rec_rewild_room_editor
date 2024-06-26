@@ -1,0 +1,10 @@
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\bin\Debug\rec_rewild_room_editor.exe.config
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\bin\Debug\rec_rewild_room_editor.exe
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\bin\Debug\rec_rewild_room_editor.pdb
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\rec_rewild_room_editor.csproj.AssemblyReference.cache
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\rec_rewild_room_editor.Form1.resources
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\rec_rewild_room_editor.Properties.Resources.resources
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\rec_rewild_room_editor.csproj.GenerateResource.cache
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\rec_rewild_room_editor.csproj.CoreCompileInputs.cache
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\rec_rewild_room_editor.exe
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\rec_rewild_room_editor.pdb

@@ -29,253 +29,448 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadingScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.subroomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            openFileDialog1 = new OpenFileDialog();
+            dateTimePicker1 = new DateTimePicker();
+            menuStrip1 = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            openToolStripMenuItem = new ToolStripMenuItem();
+            saveToolStripMenuItem = new ToolStripMenuItem();
+            saveAsToolStripMenuItem = new ToolStripMenuItem();
+            closeToolStripMenuItem = new ToolStripMenuItem();
+            loadingScreenToolStripMenuItem = new ToolStripMenuItem();
+            subroomToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            label3 = new Label();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox4 = new TextBox();
+            label2 = new Label();
+            label4 = new Label();
+            textBox5 = new TextBox();
+            label5 = new Label();
+            panel1 = new Panel();
+            checkBox6 = new CheckBox();
+            checkBox5 = new CheckBox();
+            checkBox3 = new CheckBox();
+            checkBox4 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox1 = new CheckBox();
+            panel2 = new Panel();
+            CheerCountBox = new TextBox();
+            FavoriteCountBox = new TextBox();
+            VisitorCountBox = new TextBox();
+            FavoriteCount = new Label();
+            VisitorCount = new Label();
+            CheerCount = new Label();
+            VisitCount = new Label();
+            VisitCountBox = new TextBox();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileOk += openFileDialog1_FileOk;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(91, 195);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(222, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            dateTimePicker1.Location = new Point(106, 225);
+            dateTimePicker1.Margin = new Padding(4, 3, 4, 3);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(258, 23);
+            dateTimePicker1.TabIndex = 0;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.loadingScreenToolStripMenuItem,
-            this.subroomToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(867, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, loadingScreenToolStripMenuItem, subroomToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new Padding(7, 2, 0, 2);
+            menuStrip1.Size = new Size(949, 24);
+            menuStrip1.TabIndex = 1;
+            menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.closeToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
-            this.fileToolStripMenuItem.Text = "file";
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openToolStripMenuItem, saveToolStripMenuItem, saveAsToolStripMenuItem, closeToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(35, 20);
+            fileToolStripMenuItem.Text = "file";
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.openToolStripMenuItem.Text = "open";
+            openToolStripMenuItem.Name = "openToolStripMenuItem";
+            openToolStripMenuItem.Size = new Size(111, 22);
+            openToolStripMenuItem.Text = "open";
+            openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveToolStripMenuItem.Text = "save";
+            saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            saveToolStripMenuItem.Size = new Size(111, 22);
+            saveToolStripMenuItem.Text = "save";
             // 
             // saveAsToolStripMenuItem
             // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveAsToolStripMenuItem.Text = "save as";
+            saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            saveAsToolStripMenuItem.Size = new Size(111, 22);
+            saveAsToolStripMenuItem.Text = "save as";
             // 
             // closeToolStripMenuItem
             // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.closeToolStripMenuItem.Text = "close";
+            closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            closeToolStripMenuItem.Size = new Size(111, 22);
+            closeToolStripMenuItem.Text = "close";
             // 
             // loadingScreenToolStripMenuItem
             // 
-            this.loadingScreenToolStripMenuItem.Name = "loadingScreenToolStripMenuItem";
-            this.loadingScreenToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.loadingScreenToolStripMenuItem.Text = "loading screen";
+            loadingScreenToolStripMenuItem.Name = "loadingScreenToolStripMenuItem";
+            loadingScreenToolStripMenuItem.Size = new Size(96, 20);
+            loadingScreenToolStripMenuItem.Text = "loading screen";
             // 
             // subroomToolStripMenuItem
             // 
-            this.subroomToolStripMenuItem.Name = "subroomToolStripMenuItem";
-            this.subroomToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.subroomToolStripMenuItem.Text = "subroom";
+            subroomToolStripMenuItem.Name = "subroomToolStripMenuItem";
+            subroomToolStripMenuItem.Size = new Size(67, 20);
+            subroomToolStripMenuItem.Text = "subroom";
             // 
             // helpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
-            this.helpToolStripMenuItem.Text = "help";
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(42, 20);
+            helpToolStripMenuItem.Text = "help";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(490, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(365, 199);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.DarkGray;
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Location = new Point(22, 18);
+            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(385, 207);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Description";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Location = new Point(29, 77);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(67, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Description";
+            label1.Click += label1_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 35);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 52);
-            this.textBox1.TabIndex = 4;
+            textBox1.Location = new Point(106, 73);
+            textBox1.Margin = new Padding(4, 3, 4, 3);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(258, 59);
+            textBox1.TabIndex = 4;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(487, 243);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "image path";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            label3.AutoSize = true;
+            label3.Location = new Point(22, 234);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 15);
+            label3.TabIndex = 13;
+            label3.Text = "image path";
+            label3.Click += label3_Click;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(552, 240);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(303, 20);
-            this.textBox3.TabIndex = 12;
+            textBox3.Location = new Point(96, 231);
+            textBox3.Margin = new Padding(4, 3, 4, 3);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(311, 23);
+            textBox3.TabIndex = 12;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 119);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 44);
-            this.textBox2.TabIndex = 11;
+            textBox2.Location = new Point(106, 137);
+            textBox2.Margin = new Padding(4, 3, 4, 3);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(258, 50);
+            textBox2.TabIndex = 11;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(91, 93);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 20);
-            this.textBox4.TabIndex = 10;
+            textBox4.Location = new Point(106, 44);
+            textBox4.Margin = new Padding(4, 3, 4, 3);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(258, 23);
+            textBox4.TabIndex = 10;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "room Warning";
+            label2.AutoSize = true;
+            label2.Location = new Point(14, 141);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(84, 15);
+            label2.TabIndex = 9;
+            label2.Text = "room Warning";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "room Name";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            label4.AutoSize = true;
+            label4.Location = new Point(28, 44);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(71, 15);
+            label4.TabIndex = 8;
+            label4.Text = "room Name";
+            label4.Click += label4_Click;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(91, 169);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(222, 20);
-            this.textBox5.TabIndex = 15;
+            textBox5.Location = new Point(106, 195);
+            textBox5.Margin = new Padding(4, 3, 4, 3);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(258, 23);
+            textBox5.TabIndex = 15;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 169);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "room Id";
+            label5.AutoSize = true;
+            label5.Location = new Point(50, 195);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 15);
+            label5.TabIndex = 14;
+            label5.Text = "room Id";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Location = new System.Drawing.Point(319, 38);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(162, 177);
-            this.panel1.TabIndex = 16;
+            panel1.BackColor = Color.Silver;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(checkBox6);
+            panel1.Controls.Add(checkBox5);
+            panel1.Controls.Add(checkBox3);
+            panel1.Controls.Add(checkBox4);
+            panel1.Controls.Add(checkBox2);
+            panel1.Controls.Add(checkBox1);
+            panel1.Location = new Point(372, 44);
+            panel1.Margin = new Padding(4, 3, 4, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(135, 174);
+            panel1.TabIndex = 16;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.Location = new Point(13, 138);
+            checkBox6.Margin = new Padding(4, 3, 4, 3);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(116, 19);
+            checkBox6.TabIndex = 5;
+            checkBox6.Text = "Custom Warning";
+            checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Location = new Point(13, 113);
+            checkBox5.Margin = new Padding(4, 3, 4, 3);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(71, 19);
+            checkBox5.TabIndex = 4;
+            checkBox5.Text = "Violence";
+            checkBox5.UseVisualStyleBackColor = true;
+            checkBox5.CheckedChanged += checkBox5_CheckedChanged;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(13, 88);
+            checkBox3.Margin = new Padding(4, 3, 4, 3);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(103, 19);
+            checkBox3.TabIndex = 3;
+            checkBox3.Text = "IntenseMotion";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Location = new Point(13, 63);
+            checkBox4.Margin = new Padding(4, 3, 4, 3);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(102, 19);
+            checkBox4.TabIndex = 2;
+            checkBox4.Text = "FlashingLights";
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(14, 38);
+            checkBox2.Margin = new Padding(4, 3, 4, 3);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(64, 19);
+            checkBox2.TabIndex = 1;
+            checkBox2.Text = "Mature";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(14, 13);
+            checkBox1.Margin = new Padding(4, 3, 4, 3);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(57, 19);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "Scary ";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Silver;
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(label3);
+            panel2.Location = new Point(512, 41);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(429, 259);
+            panel2.TabIndex = 17;
+            // 
+            // CheerCountBox
+            // 
+            CheerCountBox.Location = new Point(103, 271);
+            CheerCountBox.Margin = new Padding(4, 3, 4, 3);
+            CheerCountBox.Name = "CheerCountBox";
+            CheerCountBox.Size = new Size(102, 23);
+            CheerCountBox.TabIndex = 18;
+            // 
+            // FavoriteCountBox
+            // 
+            FavoriteCountBox.Location = new Point(102, 301);
+            FavoriteCountBox.Margin = new Padding(4, 3, 4, 3);
+            FavoriteCountBox.Name = "FavoriteCountBox";
+            FavoriteCountBox.Size = new Size(102, 23);
+            FavoriteCountBox.TabIndex = 19;
+            // 
+            // VisitorCountBox
+            // 
+            VisitorCountBox.Location = new Point(102, 330);
+            VisitorCountBox.Margin = new Padding(4, 3, 4, 3);
+            VisitorCountBox.Name = "VisitorCountBox";
+            VisitorCountBox.Size = new Size(102, 23);
+            VisitorCountBox.TabIndex = 20;
+            // 
+            // FavoriteCount
+            // 
+            FavoriteCount.AutoSize = true;
+            FavoriteCount.Location = new Point(11, 304);
+            FavoriteCount.Margin = new Padding(4, 0, 4, 0);
+            FavoriteCount.Name = "FavoriteCount";
+            FavoriteCount.Size = new Size(85, 15);
+            FavoriteCount.TabIndex = 23;
+            FavoriteCount.Text = "Favorite Count";
+            // 
+            // VisitorCount
+            // 
+            VisitorCount.AutoSize = true;
+            VisitorCount.Location = new Point(20, 333);
+            VisitorCount.Margin = new Padding(4, 0, 4, 0);
+            VisitorCount.Name = "VisitorCount";
+            VisitorCount.Size = new Size(76, 15);
+            VisitorCount.TabIndex = 24;
+            VisitorCount.Text = "Visitor Count";
+            // 
+            // CheerCount
+            // 
+            CheerCount.AutoSize = true;
+            CheerCount.Location = new Point(22, 274);
+            CheerCount.Margin = new Padding(4, 0, 4, 0);
+            CheerCount.Name = "CheerCount";
+            CheerCount.Size = new Size(74, 15);
+            CheerCount.TabIndex = 25;
+            CheerCount.Text = "Cheer Count";
+            // 
+            // VisitCount
+            // 
+            VisitCount.AutoSize = true;
+            VisitCount.Location = new Point(31, 366);
+            VisitCount.Margin = new Padding(4, 0, 4, 0);
+            VisitCount.Name = "VisitCount";
+            VisitCount.Size = new Size(65, 15);
+            VisitCount.TabIndex = 27;
+            VisitCount.Text = "Visit Count";
+            // 
+            // VisitCountBox
+            // 
+            VisitCountBox.Location = new Point(102, 363);
+            VisitCountBox.Margin = new Padding(4, 3, 4, 3);
+            VisitCountBox.Name = "VisitCountBox";
+            VisitCountBox.Size = new Size(102, 23);
+            VisitCountBox.TabIndex = 26;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(867, 496);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "rec rewild room editor";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(192, 255, 192);
+            ClientSize = new Size(949, 572);
+            Controls.Add(VisitCount);
+            Controls.Add(VisitCountBox);
+            Controls.Add(CheerCount);
+            Controls.Add(VisitorCount);
+            Controls.Add(FavoriteCount);
+            Controls.Add(VisitorCountBox);
+            Controls.Add(FavoriteCountBox);
+            Controls.Add(CheerCountBox);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(textBox5);
+            Controls.Add(label5);
+            Controls.Add(textBox2);
+            Controls.Add(textBox4);
+            Controls.Add(label2);
+            Controls.Add(label4);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "rec rewild room editor";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
@@ -285,18 +480,34 @@
         private System.Windows.Forms.ToolStripMenuItem loadingScreenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subroomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.CheckBox checkBox1;
+        public System.Windows.Forms.CheckBox checkBox2;
+        public System.Windows.Forms.CheckBox checkBox3;
+        public System.Windows.Forms.CheckBox checkBox4;
+        public System.Windows.Forms.CheckBox checkBox5;
+        public System.Windows.Forms.CheckBox checkBox6;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox5;
+        private Panel panel2;
+        public PictureBox pictureBox1;
+        public DateTimePicker dateTimePicker1;
+        public TextBox CheerCountBox;
+        public TextBox FavoriteCountBox;
+        public TextBox VisitorCountBox;
+        private Label FavoriteCount;
+        private Label VisitorCount;
+        private Label CheerCount;
+        private Label VisitCount;
+        public TextBox VisitCountBox;
     }
 }
 

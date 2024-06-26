@@ -16,5 +16,14 @@ namespace rec_rewild_room_editor
         {
             InitializeComponent();
         }
+
+        private void discardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.subroomEditorHide();
+        }
+        private void subroomeditor_quit(object sender, EventArgs e)
+        {
+            Program.LoadingScreenEditorQuit();
+        }
     }
 }

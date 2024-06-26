@@ -146,6 +146,7 @@
             subroomToolStripMenuItem.Name = "subroomToolStripMenuItem";
             subroomToolStripMenuItem.Size = new Size(67, 20);
             subroomToolStripMenuItem.Text = "subroom";
+            subroomToolStripMenuItem.Click += subroomToolStripMenuItem_Click; 
             // 
             // helpToolStripMenuItem
             // 

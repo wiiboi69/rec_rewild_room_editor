@@ -142,9 +142,31 @@ namespace rec_rewild_room_editor
         {
             
         }
+        //subroom screen editor menu
+        public static void subroomEditorVisible()
+        {
+            subroomEditor.Visible = true;
+        }
+        public static void subroomEditorHide()
+        {
+            subroomEditor.Visible = false;
+            form1.Visible = true;
+
+        }
+        public static void subroomEditorQuit()
+        {
+            form1.Visible = true;
+            subroomEditor = new subroom_editor();
+        }
+        public static void subroomEditorSave()
+        {
+
+        }
         public static Form1 form1 = new Form1();
 
         public static Form2 LoadingScreenEditor = new Form2();
+
+        public static subroom_editor subroomEditor = new subroom_editor();
 
         internal static string? roomdata;
 

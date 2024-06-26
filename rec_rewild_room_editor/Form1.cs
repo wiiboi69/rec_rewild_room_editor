@@ -71,7 +71,7 @@ namespace rec_rewild_room_editor
                 Program.RoomSetValues(textfile);
                 Program.filepath = path;
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("fail to open file: " + ex);
             }
@@ -266,6 +266,12 @@ namespace rec_rewild_room_editor
             };
 
             File.WriteAllText(Program.filepath, JsonConvert.SerializeObject(rootv2));
+        }
+
+        private void subroomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Program.subroomEditorVisible();
         }
     }
 }

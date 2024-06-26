@@ -36,10 +36,10 @@
             saveToolStripMenuItem = new ToolStripMenuItem();
             discardToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
-            listBox1 = new ListBox();
-            label1 = new Label();
-            label2 = new Label();
             checkBox1 = new CheckBox();
+            label2 = new Label();
+            label1 = new Label();
+            listBox1 = new ListBox();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -64,35 +64,37 @@
             // addToolStripMenuItem
             // 
             addToolStripMenuItem.Name = "addToolStripMenuItem";
-            addToolStripMenuItem.Size = new Size(180, 22);
+            addToolStripMenuItem.Size = new Size(112, 22);
             addToolStripMenuItem.Text = "add";
             // 
             // deleteToolStripMenuItem
             // 
             deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new Size(180, 22);
+            deleteToolStripMenuItem.Size = new Size(112, 22);
             deleteToolStripMenuItem.Text = "delete";
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(180, 22);
+            toolStripMenuItem2.Size = new Size(112, 22);
             toolStripMenuItem2.Text = " ";
             // 
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new Size(180, 22);
+            saveToolStripMenuItem.Size = new Size(112, 22);
             saveToolStripMenuItem.Text = "save";
             // 
             // discardToolStripMenuItem
             // 
             discardToolStripMenuItem.Name = "discardToolStripMenuItem";
-            discardToolStripMenuItem.Size = new Size(180, 22);
+            discardToolStripMenuItem.Size = new Size(112, 22);
             discardToolStripMenuItem.Text = "discard";
+            discardToolStripMenuItem.Click += discardToolStripMenuItem_Click;
             // 
             // panel1
             // 
+            panel1.BackColor = Color.LightGray;
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(checkBox1);
             panel1.Controls.Add(label2);
@@ -101,33 +103,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(510, 399);
             panel1.TabIndex = 5;
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(581, 71);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(207, 34);
-            listBox1.TabIndex = 6;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(38, 48);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(38, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
             // 
             // checkBox1
             // 
@@ -138,6 +113,33 @@
             checkBox1.TabIndex = 2;
             checkBox1.Text = "IsSandbox";
             checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(38, 77);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 1;
+            label2.Text = "label2";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(38, 48);
+            label1.Name = "label1";
+            label1.Size = new Size(37, 15);
+            label1.TabIndex = 0;
+            label1.Text = "name";
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(558, 39);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(207, 34);
+            listBox1.TabIndex = 6;
             // 
             // subroom_editor
             // 
@@ -153,6 +155,7 @@
             Name = "subroom_editor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "subrooms editor";
+            FormClosed += subroomeditor_quit;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             panel1.ResumeLayout(false);

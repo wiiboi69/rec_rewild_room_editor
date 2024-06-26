@@ -20,5 +20,8 @@
     <Compile Update="loadingscreen editor.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="subroom editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -59,6 +59,8 @@
             checkBox2 = new CheckBox();
             checkBox1 = new CheckBox();
             panel2 = new Panel();
+            button2 = new Button();
+            button1 = new Button();
             CheerCountBox = new TextBox();
             FavoriteCountBox = new TextBox();
             VisitorCountBox = new TextBox();
@@ -67,6 +69,8 @@
             CheerCount = new Label();
             VisitCount = new Label();
             VisitCountBox = new TextBox();
+            dateTimePicker2 = new DateTimePicker();
+            saveFileDialog1 = new SaveFileDialog();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -83,7 +87,7 @@
             dateTimePicker1.Location = new Point(106, 225);
             dateTimePicker1.Margin = new Padding(4, 3, 4, 3);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(258, 23);
+            dateTimePicker1.Size = new Size(141, 23);
             dateTimePicker1.TabIndex = 0;
             // 
             // menuStrip1
@@ -106,26 +110,28 @@
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(111, 22);
+            openToolStripMenuItem.Size = new Size(180, 22);
             openToolStripMenuItem.Text = "open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new Size(111, 22);
+            saveToolStripMenuItem.Size = new Size(180, 22);
             saveToolStripMenuItem.Text = "save";
+            saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
             // saveAsToolStripMenuItem
             // 
             saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            saveAsToolStripMenuItem.Size = new Size(111, 22);
+            saveAsToolStripMenuItem.Size = new Size(180, 22);
             saveAsToolStripMenuItem.Text = "save as";
+            saveAsToolStripMenuItem.Click += saveAsToolStripMenuItem_Click;
             // 
             // closeToolStripMenuItem
             // 
             closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            closeToolStripMenuItem.Size = new Size(111, 22);
+            closeToolStripMenuItem.Size = new Size(180, 22);
             closeToolStripMenuItem.Text = "close";
             // 
             // loadingScreenToolStripMenuItem
@@ -133,6 +139,7 @@
             loadingScreenToolStripMenuItem.Name = "loadingScreenToolStripMenuItem";
             loadingScreenToolStripMenuItem.Size = new Size(96, 20);
             loadingScreenToolStripMenuItem.Text = "loading screen";
+            loadingScreenToolStripMenuItem.Click += loadingScreenToolStripMenuItem_Click;
             // 
             // subroomToolStripMenuItem
             // 
@@ -342,13 +349,35 @@
             // 
             panel2.BackColor = Color.Silver;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(button1);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(textBox3);
             panel2.Controls.Add(label3);
             panel2.Location = new Point(512, 41);
             panel2.Name = "panel2";
-            panel2.Size = new Size(429, 259);
+            panel2.Size = new Size(429, 292);
             panel2.TabIndex = 17;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(95, 257);
+            button2.Name = "button2";
+            button2.Size = new Size(67, 23);
+            button2.TabIndex = 15;
+            button2.Text = "set image";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(22, 256);
+            button1.Name = "button1";
+            button1.Size = new Size(67, 23);
+            button1.TabIndex = 14;
+            button1.Text = "refresh";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // CheerCountBox
             // 
@@ -422,12 +451,24 @@
             VisitCountBox.Size = new Size(102, 23);
             VisitCountBox.TabIndex = 26;
             // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Format = DateTimePickerFormat.Time;
+            dateTimePicker2.Location = new Point(255, 225);
+            dateTimePicker2.Margin = new Padding(4, 3, 4, 3);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.ShowUpDown = true;
+            dateTimePicker2.Size = new Size(109, 23);
+            dateTimePicker2.TabIndex = 28;
+            dateTimePicker2.Value = new DateTime(2024, 6, 26, 17, 8, 8, 0);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 255, 192);
-            ClientSize = new Size(949, 572);
+            ClientSize = new Size(949, 396);
+            Controls.Add(dateTimePicker2);
             Controls.Add(VisitCount);
             Controls.Add(VisitCountBox);
             Controls.Add(CheerCount);
@@ -508,6 +549,10 @@
         private Label CheerCount;
         private Label VisitCount;
         public TextBox VisitCountBox;
+        public DateTimePicker dateTimePicker2;
+        private SaveFileDialog saveFileDialog1;
+        private Button button1;
+        private Button button2;
     }
 }
 

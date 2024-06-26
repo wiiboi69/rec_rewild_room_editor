@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rec_rewild_room_editor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28a52c6c3755457524537404b2e1b4aedc315157")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5d6f1ea345957c2f9a69cf4f4aa73ad993115e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("rec_rewild_room_editor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rec_rewild_room_editor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.1")]

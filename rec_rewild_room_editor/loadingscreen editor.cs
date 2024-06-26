@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using rec_rewild_room_editor;
+using static System.Windows.Forms.DataFormats;
 
 namespace rec_rewild_room_editor
 {
@@ -20,6 +22,25 @@ namespace rec_rewild_room_editor
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void discardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.LoadingScreenEditorHide();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void Form2_quit(object sender, EventArgs e)
+        {
+            Program.LoadingScreenEditorQuit();
         }
     }
 }

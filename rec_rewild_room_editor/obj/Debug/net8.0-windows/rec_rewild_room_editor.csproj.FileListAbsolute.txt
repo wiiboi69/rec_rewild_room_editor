@@ -19,3 +19,4 @@ E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debu
 E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\net8.0-windows\refint\rec_rewild_room_editor.dll
 E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\net8.0-windows\rec_rewild_room_editor.genruntimeconfig.cache
 E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\net8.0-windows\ref\rec_rewild_room_editor.dll
+E:\vs_Source\Source\Repos\rec_rewild_room_editor\rec_rewild_room_editor\obj\Debug\net8.0-windows\rec_rewild_room_editor.subroom_editor.resources
